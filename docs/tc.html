@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiệp Mời Cưới</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f8f8;
+        }
+        .invitation {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            width: 500px;
+            text-align: center;
+            padding: 20px;
+        }
+        .invitation img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .button-container {
+            margin: 20px 0;
+        }
+        .button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 16px;
+        }
+        .button.decline {
+            background-color: #dc3545;
+        }
+        .button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="invitation">
+        <!-- Thay thế URL của ảnh bằng URL thực tế của bạn -->
+        <img src="tc.png" alt="Thiệp mời cưới">
+        
+        <div class="button-container">
+            <button class="button" onclick="confirmAttendance()">Tham dự</button>
+            <button class="button decline" onclick="declineAttendance()">Không tham dự</button>
+        </div>
+    </div>
+
+    <script>
+        function confirmAttendance() {
+            alert('Cảm ơn bạn đã xác nhận tham dự!');
+            // Có thể thêm mã để gửi thông tin phản hồi đến email hoặc server ở đây
+        }
+
+        function declineAttendance() {
+            alert('Chúng tôi tiếc rằng bạn không thể tham dự.');
+            // Có thể thêm mã để gửi thông tin phản hồi đến email hoặc server ở đây
+        }
+    </script>
+</body>
+</html>
